@@ -10,8 +10,8 @@ const App = () => {
   return (
     <>
     <Routes>
-			<Route path="/register" element={<Register />} />
-			<Route path="/" element={<Signin />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/" element={<Signin />} />
       <Route path="/home" element={<Home />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/password-reset/:id/:token" element={<PasswordReset />} />
