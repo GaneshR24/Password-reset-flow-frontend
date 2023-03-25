@@ -1,11 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
     const handleLogout = () => {
-		localStorage.removeItem("token");
-		window.location.reload();
-	};
+      localStorage.clear();
+      navigate("/")
+    };
   return (
     <>
       <div className="layout">
